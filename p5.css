@@ -125,9 +125,9 @@ input, select, textarea {
   
   .-fx-gal-image-big {
     display: none;
-    position: relative;
-    top: 0;
-    left: 0;
+    position: absolute;
+    top: 50;
+    left:50;
     background-color: rgba(5, 10, 15, 0.8);
     overflow: hidden;
     height: 600px;
