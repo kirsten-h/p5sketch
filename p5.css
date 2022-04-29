@@ -81,6 +81,44 @@ input, select, textarea {
     color: #66CCCC;
   }
 
+/* Image Gallery */
+*
+  box-sizing border-box
+
+body
+  min-height 100vh
+  display flex
+  align-items center
+  justify-content center
+
+.image-container
+  display grid
+  grid-template-columns repeat(3, 1fr)
+  grid-template-rows repeat(3, 1fr)
+  width 1200px
+  grid-gap 0.5rem
+
+  .image
+    position relative
+    padding-bottom 100%
+
+    img
+      height 100%
+      width 100%
+      object-fit cover
+      left 0
+      position absolute
+      top 0
+
+    img:nth-of-type(1)
+      filter grayscale(1) brightness(40%)
+
+    img:nth-of-type(2)
+      clip-path var(--clip-start)
+      transition clip-path 0.5s
+
+    &:hover img:nth-of-type(2)
+      clip-path var(--clip-end)
 
 /* Basic */
 @-ms-viewport {
@@ -261,44 +299,7 @@ img {
   height: auto;
 }
 
-/* Image Gallery */
-*
-  box-sizing border-box
 
-body
-  min-height 100vh
-  display flex
-  align-items center
-  justify-content center
-
-.image-container
-  display grid
-  grid-template-columns repeat(3, 1fr)
-  grid-template-rows repeat(3, 1fr)
-  width 1200px
-  grid-gap 0.5rem
-
-  .image
-    position relative
-    padding-bottom 100%
-
-    img
-      height 100%
-      width 100%
-      object-fit cover
-      left 0
-      position absolute
-      top 0
-
-    img:nth-of-type(1)
-      filter grayscale(1) brightness(40%)
-
-    img:nth-of-type(2)
-      clip-path var(--clip-start)
-      transition clip-path 0.5s
-
-    &:hover img:nth-of-type(2)
-      clip-path var(--clip-end)
 /* Wrapper */
 #wrapper {
   display: -moz-flex;
