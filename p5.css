@@ -125,7 +125,7 @@ input, select, textarea {
   
   .-fx-gal-image-big {
     display: none;
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     background-color: rgba(5, 10, 15, 0.8);
