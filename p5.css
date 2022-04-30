@@ -143,7 +143,7 @@ input, select, textarea {
     position: absolute;
     box-shadow: 0px 0px 600px 600px rgba(0, 0, 0, 0.9);
     left: 50%;
-    top: 50%;
+    top: 20%;
     transform: translate(-50%, -50%);
   }
   
