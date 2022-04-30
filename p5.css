@@ -83,7 +83,9 @@ input, select, textarea {
 
 
   /* gallery specific CSS */
-  
+  .center {
+padding: 50px 0;
+   }
   .-fx-image-gal {
     display: flex;
     flex-wrap: wrap;
